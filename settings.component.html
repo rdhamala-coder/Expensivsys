@@ -1,0 +1,16 @@
+<div class="settingsalign">
+<div class="form-group">
+<span>Total budget&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+<input type="text" placeholder="Enter total budget" [(ngModel)]="budget"> 
+</div>
+<div class="updbtn">
+<button type="button" class="btn btn-primary" (click)="updtotalbudget(budget)">Update</button>
+</div>
+<span>Categories  &emsp;&emsp;&emsp;&emsp;
+</span> 
+<select [ngModel]="item" style="width: 190px; padding:7px;margin-top: 72px;">
+    <option *ngFor="let item of items" [(ngValue)]="item">{{item.name}}</option>
+</select>
+<div class ="addbtn">
+ <button type="button" class="btn btn-success" (click) ="additems(item)">Add</button></div>
+</div> 

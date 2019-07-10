@@ -1,0 +1,22 @@
+
+<div>
+  <div class ="header">
+    <h1 style="font-size:20px;text-align:center;">Expenseeve</h1>
+</div>
+<div class ="central_container">
+ <div class="side_nav"><ul>
+        <li (click)="home_page()">Home</li>
+        <li (click)="settings_page()">Settings</li>
+        <li (click)="profile_page()">Profile</li>
+      
+    </ul></div>
+
+ <div class="main_content">
+    <router-outlet></router-outlet>
+     
+ </div>   
+</div>
+<!-- <div class="footer">
+    hello footer
+</div> -->
+</div>
